@@ -1,1 +1,1 @@
-module tst
+module github.com/afruizc/tst
