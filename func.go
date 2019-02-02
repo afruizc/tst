@@ -11,9 +11,9 @@ func Ok(t *testing.T, err error) {
 }
 
 // If expr is false, calls t.Error()
-func True(t *testing.T, expr bool, errMsg string) {
+func True(t *testing.T, expr bool, fmtMsg string, vals ...interface{}) {
 	t.Helper()
 	if !expr {
-		t.Error(errMsg)
+		t.Errorf(fmtMsg, vals)
 	}
 }
