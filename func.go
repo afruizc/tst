@@ -14,6 +14,6 @@ func Ok(t *testing.T, err error) {
 func True(t *testing.T, expr bool, fmtMsg string, vals ...interface{}) {
 	t.Helper()
 	if !expr {
-		t.Errorf(fmtMsg, vals)
+		t.Errorf(fmtMsg, vals...)
 	}
 }
