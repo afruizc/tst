@@ -1,1 +1,1 @@
-module github.com/afruizc/tst
+module github.com/green-john/tst
